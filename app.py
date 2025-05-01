@@ -11,8 +11,8 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 # Cargar el modelo y el escalador
-scaler_path = '../scaler.pkl'
-model_path = '../penguins_model.pkl'
+scaler_path = 'scaler.pkl'
+model_path = 'penguins_model.pkl'
 
 with open(scaler_path, 'rb') as file:
     scaler = pload(file)
